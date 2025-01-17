@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>drone zone</title>
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <!-- s : header -->
@@ -22,8 +26,12 @@
                     </ul>
                     <!-- nav는 gnb만 해도 되고 헤더 전체를 해도 된다 -inner의 언급을 최소화 하면서 flex 사용 가능 -->
                     <div class="util-menu">
-                        <button type="button"><i>menu</i></button>
-                        <button type="button"><i>contact</i></button>
+                        <button type="button" class="btn-menu">
+                            <i class="hidden">menu</i>
+                        </button>
+                        <button type="button" class="btn-contact">
+                            <i class="hidden">contact</i>
+                        </button>
                     </div>
                 </nav>
             </div>

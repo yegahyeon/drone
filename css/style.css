@@ -1,0 +1,107 @@
+@charset 'utf-8';
+
+.inner {
+    /* w118r+m0-a+bg */
+    width: 38rem;
+    margin: 0 auto;
+    /* background: rgba(255, 255, 0, 0.1); */
+}
+
+#header {
+    /* background: #000; */
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    /* 뷰포트 기준 */
+}
+
+#header nav {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.util-menu {
+    display: flex;
+    gap: 1rem;
+}
+.util-menu button {
+    width: 4rem;
+    height: 4rem;
+    background: no-repeat 50%;
+    border: 1px solid var(--white70p);
+    border-radius: 50%;
+}
+.util-menu .btn-menu {
+    background-image: url(../img/ico-menu2.svg);
+}
+.util-menu .btn-contact {
+    background-image: url(../img/ico-contact.svg);
+}
+.gnb {
+    display: none;
+}
+
+.logo a {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background: url(../img/logo-m.svg) no-repeat 50% / contain;
+}
+
+.visual {
+    height: 52rem;
+    background: skyblue;
+    position: relative;
+}
+
+.video-wrap {
+    height: 100%;
+}
+
+.video-wrap::after {
+    content: "";
+    position: absolute;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    inset: 0;
+    /* inset : 어떤 영역을 기준으로 다 채우겠다 */
+    background: var(--gradient);
+    opacity: 0.8;
+}
+
+.visual-title {
+    position: absolute;
+    top: 14.9rem;
+    width: 38rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid #f00; */
+}
+
+.visual-title h2 {
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: #fff;
+    /* line-height: 44px; */
+    line-height: 1.2; /* 44/36 */
+}
+
+.visual-title p {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.2; /* 24/20 */
+    margin-top: 2rem;
+}
+
+.btn-cta {
+    background: #fff;
+    color: var(--main-color);
+    margin: 4.8rem auto 0;
+}
